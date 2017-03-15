@@ -1,0 +1,15 @@
+﻿<div class="modal-content">
+    <div class="modal-header modal-header-danger">
+        <button type="button" class="close" ng-click="modal.closeModal()">&times;</button>
+        <h2>New List</h2>
+    </div>
+
+    <div class="modal-body">
+        <form class="form-group" >
+            <textarea placeholder="Title.." ng-model="list.title" class="form-control" id="title" ></textarea>
+            <input ng-click="modal.addtoDoList(list)" type="submit" value="Submit" />
+            
+        </form>
+
+    </div>
+</div>

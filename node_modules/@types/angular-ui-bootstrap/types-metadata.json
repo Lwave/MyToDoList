@@ -1,0 +1,29 @@
+{
+    "name": "angular-ui-bootstrap",
+    "libraryName": "Angular UI Bootstrap",
+    "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+    "data": {
+        "authors": "Brian Surowiec <https://github.com/xt0rted>, Ryan Southgate <https://github.com/ry8806>",
+        "dependencies": {
+            "angular": "*"
+        },
+        "pathMappings": {},
+        "libraryMajorVersion": 0,
+        "libraryMinorVersion": 13,
+        "typeScriptVersion": "2.0",
+        "libraryName": "Angular UI Bootstrap",
+        "typingsPackageName": "angular-ui-bootstrap",
+        "projectName": "https://github.com/angular-ui/bootstrap",
+        "sourceRepoURL": "https://www.github.com/DefinitelyTyped/DefinitelyTyped",
+        "globals": [],
+        "declaredModules": [
+            "angular-ui-bootstrap/."
+        ],
+        "files": [
+            "index.d.ts"
+        ],
+        "hasPackageJson": false,
+        "contentHash": "b1187ae912585d9f54777815dc893cc099252e918aac9bfb8dc8418a5aa3d306"
+    },
+    "isLatest": true
+}

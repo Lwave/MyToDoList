@@ -1,0 +1,35 @@
+<div class="page">
+    <div ng-show="!account.isLoggedIn()">
+        <center>
+        <h1>Welcome to the home page!</h1>
+        <p>If you're not logged in, do it! </p>
+            </center>
+        <a href="/login" class="btn btn-success form-control">Login</a>
+    
+        </div>
+    <div ng-show="account.isLoggedIn()">
+        <h3>Add a new list</h3>
+        <input type="button" value="+" class="btn btn-success" ng-click="controller.openModal('addListModal.html', list)" />
+        <center>
+        <div id="myDIV" class="header" ng-repeat="list in controller.todolists">
+            <h2>{{list.title}}</h2>
+            <input type="text" id="myInput" placeholder="Add to your list..." ng-model="todoitem">
+            <input type="submit" value="Submit" class="btn btn-success" ng-click="controller.addToDoItem(todoitem, list.id)" />
+            <input type="button" value="Delete" class="btn btn-danger" ng-click="controller.deletetoDoList(list.id)" />
+
+            <br />
+            <br />
+
+            <div ng-repeat="item in list.toDoItems">
+                <input type="checkbox"  >
+                <span id="color">{{item.description}}</span>
+                <input type="button" ng-click="controller.deletetoDoItem(item.id, id)" value="Delete" class="btn btn-danger btn-sm"/>
+
+            </div>
+        </div>
+            </center>
+
+
+        
+    </div>
+</div>
